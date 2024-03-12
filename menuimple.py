@@ -1,7 +1,6 @@
 import pygame
 import mediapipe as mp
 import cv2
-
 pygame.init()
 pygame.mixer.init()
 
@@ -82,8 +81,6 @@ def main(score, ball):
 
                 if results.multi_hand_landmarks is not None:
                     
-                    #if (hand_landmarks.landmark[4].y < hand_landmarks.landmark[0].y):
-                        #screen.fill((52,78,91))
                     draw_text("Press SPASE to pause", fout, TEXT_COL, 160, 250)
                     
                     print("Manos") #revisar
